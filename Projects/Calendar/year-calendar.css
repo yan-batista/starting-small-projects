@@ -1,0 +1,127 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template:
+    "title title title title"
+    "container-1 container-2 container-3 container-4"
+    "container-5 container-6 container-7 container-8"
+    "container-9 container-10 container-11 container-12"
+    /1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #454955;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-link {
+    border: 1px solid #222;
+    color: #FFF;
+    background-color: #454955;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.title-link:hover {
+    background-color: #363636;
+}
+
+.title-text {
+    transform: translate(45%);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#container:hover {
+    background-color: #363636;
+}
+
+.selected {
+    background-color: #222;
+    color: #2FBF71;
+    border-radius: 50%;
+}
+
+#calendar td {
+    text-align: center;
+    padding: 5px;
+}
+
+#calendar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.headMonth {
+    color: #2FBF71;
+    letter-spacing: 8px;
+}
+
+.container-1 {
+    grid-area: container-1;
+}
+
+.container-2 {
+    grid-area: container-2;
+}
+
+.container-3 {
+    grid-area: container-3;
+}
+
+.container-4 {
+    grid-area: container-4;
+}
+
+.container-5 {
+    grid-area: container-5;
+}
+
+.container-6 {
+    grid-area: container-6;
+}
+
+.container-7 {
+    grid-area: container-7;
+}
+
+.container-8 {
+    grid-area: container-8;
+}
+
+.container-9 {
+    grid-area: container-9;
+}
+
+.container-10 {
+    grid-area: container-10;
+}
+
+.container-11 {
+    grid-area: container-11;
+}
+
+.container-12 {
+    grid-area: container-12;
+}

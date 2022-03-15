@@ -1,0 +1,79 @@
+.container {
+	display: grid;
+	grid-template: 
+		"header header"
+		"nav nav" 
+		"section aside" 
+		"footer footer" 
+		/ 1.5fr 0.5fr
+}
+
+header {
+	grid-area: header;
+	background-color: tomato;
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 50px;
+}
+
+nav {
+	grid-area: nav;
+	background-color: yellow;
+}
+
+section {
+	grid-area: section;
+    display: flex;
+    flex-direction: row;
+}
+
+section * {
+    margin: 0px;
+}
+
+section p, h3 {
+    padding-left: 5px;
+}
+
+aside {
+	grid-area: aside;
+	background-color: #5765CC;
+}
+
+footer {
+	grid-area: footer;
+	background-color: #468DC7;
+	padding: 5px;
+}
+
+footer a {
+	background-color: white;
+	color: orange;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+}
+
+nav ul li a {
+	padding: 5px;
+}
+
+section .title {
+    background-color: rgb(180, 121, 73);
+}
+
+section .date {
+    background-color: rgb(180, 121, 73);
+}
+
+section .texto {
+    background-color: rgb(129, 31, 129);
+}
+
+section .author {
+    background-color: rgb(71, 15, 71);
+}

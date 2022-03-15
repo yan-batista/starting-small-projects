@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste de Form</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Form">
+	<meta name="author" content="Yan"> 
+</head>
+<body>
+	<form action="https://www.google.com/search" method="GET">
+		<fieldset>
+			<legend>Barra de Pesquisa</legend>
+			<label for="campo-de-pesquisa">Pesquisar:</label>
+			<input type="search" name="q" placeholder="Procure no google" list="teste-lista" id="campo-de-pesquisa" required="required" autofocus="autofocus" pattern="(?=.*\d)(?=.*[a-z]).{10,}"> 
+			<input type="submit" value="Busca">
+			<input type="reset" value="Limpar">
+			<datalist id="teste-lista">
+				<option value="Afghanistan">
+				<option value="Albania">
+				<option value="Algeria">
+				<option value="Andorra">
+				<option value="Angola">
+			</datalist>
+		</fieldset>
+
+		
+
+		<fieldset>
+			<legend>Seleções e senha</legend>
+			<label for="senha">Password:</label>
+			<input type="password" id="senha">
+			<br>
+			<label for="Radio">Radio:</label>
+			<input type="radio" name="Radio" id="Radio">Radio1
+			<input type="radio" name="Radio" id="Radio2">Radio2
+			<input type="radio" name="Radio" id="Radio3">Radio3
+			<br>
+			<label for="checkbox">Checkbox:</label>
+			<input type="checkbox" name="Check" id="checkbox">Check1
+			<input type="checkbox" name="Check" id="checkbox2">Check2
+			<input type="checkbox" name="Check" id="checkbox3">Check3
+		</fieldset>
+	
+		<br>
+
+		<fieldset>
+			<legend>Caixas de texto e arquivo</legend>
+			<label for="Drop-down">DropDown:</label>
+			<select size="5" multiple="multiple" id="Drop-down">
+				<optgroup label="Linguagens para Web">
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>JavaScript</option>
+					<option>PHP</option>
+				</optgroup>
+				<optgroup label="Lingaguens para Desktop">
+					<option>C</option>
+					<option>C++</option>
+					<option>Java</option>
+				</optgroup>
+			</select>
+
+			<br>
+
+			<label for="text-area">TextArea:</label>
+			<textarea rows="10" cols="40" maxlength="500" disabled="disabled" readonly="readonly" id="text-area">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non hendrerit mi, quis luctus mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean fringilla lacus ac ipsum facilisis, nec tincidunt eros laoreet. Sed consequat ex quis lacinia tincidunt. Curabitur non mi sed tortor iaculis interdum. Pellentesque commodo mattis augue, at mollis nibh dictum at. Integer faucibus lorem nec mattis tempus. Fusce pretium ante id magna scelerisque, at gravida massa mollis.
+			</textarea>
+
+			<br>
+
+			<label for="upload-file">Upload:</label>
+			<input type="file" id="upload-file">
+		</fieldset>
+
+		<fieldset>
+			<legend>Um monte de coisa1</legend>
+			<label for="busca">Search:</label>
+			<input type="search" id="busca">
+			<label for="numero">Number:</label>
+			<input type="number" id="numero">
+			<label for="alcance">Range:</label>
+			<input type="range" id="alcance">
+			<label for="cor">Color:</label>
+			<input type="color" id="cor">
+			<label for="telefone">Tel:</label>
+			<input type="tel" id="telefone">
+			<label for="link">Url:</label>
+			<input type="url" id="link">
+			<label for="data">Date:</label>
+			<input type="date" id="data">
+		</fieldset>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    color: white;
+}
+
+#container {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+#newTimer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+#newTimer > input {
+    margin: 5px;
+}
+
+#noCountdown {
+    text-align: center;
+}
+
+#timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+#countDown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#countDown > p {
+    margin: 5px;
+}
+
+#countDown > #days::after {
+    content: 'Days';
+}
+
+#countDown > #hours::after {
+    content: 'h';
+}
+
+#countDown > #min::after {
+    content: 'min';
+}
+
+#countDown > #sec::after {
+    content: 's';
+}

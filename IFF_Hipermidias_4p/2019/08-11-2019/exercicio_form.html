@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício de Forms</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="form">
+	<meta name="author" content="Yan"> 
+</head>
+<body>
+	<h2>Aula de Hipermídias</h2>
+	<h4>Preencha o formulário abaixo</h4>
+	<form>
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+			<label for="nome_field">Nome:</label>
+			<input type="text" id="nome_field" size="25" autofocus="autofocus" pattern="[a-zA-Z\s]+">
+
+			<label for="sobrenome_field">Sobrenome:</label>
+			<input type="text" id="sobrenome_field" pattern="[a-zA-Z\s]+">
+			<br>
+
+			<br>
+			<label for="dia_field">Dia:</label>
+			<input type="text" id="dia_field" pattern="^(((0?)[1-9])|([1-2]\d)|((3)[0-1]))$" maxlength="2" size="1">
+			<label for="mes_field">Mês:</label>
+			<input type="text" id="mes_field" pattern="^(((0)?)[1-9])|((1)[0-2])$" maxlength="2" size="1">
+			<label for="ano_field">Ano:</label>
+			<input type="text" id="ano_field" pattern="^(\d{4})$" maxlength="4" size="1">
+			<br>
+
+			<br>
+			<label for="rg_field">RG:</label>
+			<input type="text" id="rg_field" size="6" pattern="^(\d{9})$" maxlength="9" title="Coloque apenas os números">
+			<br>
+
+			<br>
+			<label for="cpf_field">CPF:</label>
+			<input type="text" id="cpf_field" size="3" pattern="^(\d{9})$" maxlength="9"> 
+			<label for="cpf_field2">-</label>
+			<input type="text" id="cpf_field2" size="1" pattern="^(\d{2})$" maxlength="2">
+		</fieldset>
+
+		<fieldset>
+			<legend>Dados de Endereço</legend>
+			<label for="rua_field">Rua:</label>
+			<input type="text" id="rua_field" pattern="[a-zA-Z\s]+">
+
+			<label for="num_field">Número:</label>
+			<input type="text" id="num_field" size="1" pattern="^(\d{1,5})$">
+			<br>
+
+			<br>
+			<label for="bairro_field">Bairro:</label>
+			<input type="text" id="bairro_field" pattern="[a-zA-Z\s]+">
+			<br>
+
+			<br>
+			<label for="estado">Estado:</label>
+			<select id="estado">
+				<optgroup label="Selecione seu Estado">
+					<option selected disabled hidden>Selecione seu Estado</option>
+					<option>AC</option>
+					<option>AL</option>
+					<option>AP</option>
+					<option>AM</option>
+					<option>BA</option>
+					<option>CE</option>
+					<option>DF</option>
+					<option>ES</option>
+					<option>GO</option>
+					<option>MA</option>
+					<option>MT</option>
+					<option>MS</option>
+					<option>MG</option>
+					<option>PA</option>
+					<option>PB</option>
+					<option>PR</option>
+					<option>PE</option>
+					<option>PI</option>
+					<option>RJ</option>
+					<option>RN</option>
+					<option>RS</option>
+					<option>RO</option>
+					<option>RR</option>
+					<option>SC</option>
+					<option>SP</option>
+					<option>SE</option>
+					<option>TO</option>
+				</optgroup>
+			</select>
+			<br>
+
+			<br>
+			<label for="cidade_field">Cidade:</label>
+			<input type="text" id="cidade_field" pattern="[a-zA-Z\s]+">
+			<br>
+
+			<br>
+			<label for="cep_field">CEP:</label>
+			<input type="text" id="cep_field" size="3" pattern="^[0-9]{5}$" maxlength="5">
+			<label for="cep_field2">-</label>
+			<input type="text" id="cep_field2" size="1" pattern="^[\d]{3}$" maxlength="3">
+			<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Dados de login</legend>
+			<label for="email_field">Email:</label>
+			<input type="email" id="email_field">
+			<br>
+
+			<br>
+			<label for="imagem_file">Imagem de perfil:</label>
+			<input type="file" id="imagem_file">
+			<br>
+
+			<br>
+			<label for="login_field">Login de usuário:</label>
+			<input type="text" id="login_field">
+			<br>
+
+			<br>
+			<label for="senha_field">Senha:</label>
+			<input type="password" id="senha_field">
+			<br>
+
+			<br>
+			<label for="senha_confirme_field">Confirme sua senha:</label>
+			<input type="password" id="senha_confirme_field">
+			<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Pesquisa de Interesse</legend>
+			<label for="webmaster_rd">Você deseja trabalhar como webmaster?</label><br>
+			<input type="radio" name="Radio" id="webmaster_rd">Sim<br>
+			<input type="radio" name="Radio">Não<br>
+			<input type="radio" name="Radio">Talvez<br>
+			<input type="radio" name="Radio">Quem sabe
+			<br>
+
+			<br>
+			<label for="webmaster_rd">O que você deseja aprender?</label><br>
+			<input type="radio" name="Radio" id="webmaster_rd">HTML<br>
+			<input type="radio" name="Radio">CSS<br>
+			<input type="radio" name="Radio">JavaScript<br>
+			<input type="radio" name="Radio">Django
+			<br>
+
+			<label for="coment_area">Deixe seu comentário:</label><br>
+			<textarea rows="10" cols="40" maxlength="500" id="coment_area"></textarea>
+		</fieldset>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpar">
+	</form>
+</body>
+</html>

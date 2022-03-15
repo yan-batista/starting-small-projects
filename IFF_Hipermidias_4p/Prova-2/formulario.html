@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário de Hotel</title>
+	<script src="formulario.js"></script>
+</head>
+<body>
+<fieldset>
+<legend>Dados</legend>
+	<label for="nome">Nome: </label>
+	<input type="text" id="nome">
+	<br><br>
+
+	<label for="tel">Telefone: </label>
+	<input type="number" id="tel">
+	<br><br>
+
+	<label for="dataChegada">Data de Chegada: </label>
+	<input type="date" id="dataChegada">
+	<br><br>
+
+	<label for="dataSaida">Data de Saída: </label>
+	<input type="date" id="dataSaida">
+	<br><br>
+
+	<label for="tipoQuarto">Tipo de Quarto:: </label>
+	<select id="tipoQuarto">
+		<option value="139">Single (R$139,00)</option>
+		<option value="220">Double (R$220,00)</option>
+		<option value="340">Triplo (R$340,00)</option>
+	</select>
+	<br><br>
+
+	<label for="quantCrianca">Quantidade de crianças: </label>
+	<select id="quantCrianca">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+	</select>
+	</fieldset>
+	<input type="submit" id="enviarBT">
+</body>
+</html>

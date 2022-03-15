@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Audio e Video</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Audio e Video">
+	<meta name="author" content="Yan"> 
+</head>
+<body>
+<h2> Video do Youtube:</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MmewvjbCyVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2>Html de outro site:</h2>
+<iframe src="http://www.iff.edu.br" width="400" height="150">
+	<p>Your browser does not support iframes.</p>
+</iframe>
+
+<h2>Audio:</h2>
+<audio autoloop="autoloop" controls="controls"><source src="audio.mp3" type="audio/mp3"/>
+	<p>seu navegador não suporta Audio em HTML5</p>
+</audio>
+
+<h2>Video em MP4 e OGG:</h2>
+<video width="320" height="240" controls="controls"><source src="baianinho.mp4" type="video/mp4">
+	<p>Seu navegador não suporta Video em HTML5.</p>
+</video>
+
+<video width="320" height="240" controls="controls"><source src="baianinho2.ogv" type="video/ogg">
+	<p>Seu navegador não suporta Video em HTML5.</p>
+</video>
+
+<h2>SWF</h2>
+<object type="application/x-shockwave-flash" data="swf-obj.swf" width="320" height="240">
+	<param name="loop" value="false"/>
+	<param name="swf-obj" value="swf-obj.swf"/>
+	<p>This is alternative content</p>
+</object>
+
+<embed width="320" height="240" src="swf-teste.swf"">
+
+</body>
+</html>

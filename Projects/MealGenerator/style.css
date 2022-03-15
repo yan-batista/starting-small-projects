@@ -1,0 +1,94 @@
+html,body {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-template: 
+    "titleName titleName"
+    "thumb thumb"
+    "content content"/
+    1fr 1fr;
+    grid-template-rows: 1fr 0.1fr 0.5fr;
+    color: #182B3A;
+}
+
+#titleName {
+    grid-area: titleName;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4F90B1;
+    border-bottom: 1px solid #4F90B1;
+    padding: 150px;
+}
+
+#titleText {
+    font-size: 30px;
+}
+
+#mealName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#thumb {
+    grid-area: thumb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thumb img {
+    max-width: 450px;
+    max-height: 400px;
+    transform: translate(0,-30%);
+    border-radius: 5px;
+}
+
+#ingredients {
+    margin-top: 15px;
+}
+
+#ingredients ul {
+    list-style-type: none;
+}
+
+#content {
+    grid-area: content;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #contentTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px dashed black;
+}
+
+#content #contentTitle #area {
+    margin-left: 5px;
+}
+
+#content #contentTitle #tags {
+    margin-left: auto;
+}
+
+#content #instructions {
+    display: flex; 
+    flex-direction: column;
+}
+
+#content #instructions #howTo {
+    align-self: flex-end;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 18px;
+}

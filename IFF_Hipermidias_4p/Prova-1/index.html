@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Notícias</title>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="Site Layout">
+        <meta name="author" content="Yan">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header id="topo">
+            <figure>
+                <img src="./img/skyrim-logo.png" height="200" width="120" alt="logo">
+            </figure>
+        </header>
+
+        <!-- NAV -->
+        <nav>
+            <ul class="link-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quests</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">People</a></li>
+                <li>Text: A <span class="bold">A</span> <span class="white-darkbg">A</span></li>
+            </ul>
+
+            <form>
+                <input type="button" value="Find a Companion" class="bt-shadow">
+                <input type="search" class="search-bar">
+                <input type="button" value="Ok" class="bt-shadow">
+            </form>
+
+            <a href="#">Advanced Search</a>
+
+            <ul class="button-list">
+                <li><a href="#">Cities</a></li>
+                <li><a href="#">Castles</a></li>
+                <li><a href="#">Lighthouses</a></li>
+                <li><a href="#">Forts</a></li>
+            </ul>
+        </nav>
+
+        <!-- ASIDE (LEFT) -->
+        <aside class="aside-left">
+            <figure>
+                <img src="./img/talos.png" height="100" width="50" alt="talos">
+                <p>Welcome from Talos</p>
+            </figure>
+
+            <ul class="button-list">
+                <li><a href="#">The College of Winterhold</a></li>
+                <li><a href="#">The Dark brotherhood</a></li>
+                <li><a href="#">The Thieves Guild</a></li>
+                <li><a href="#">The Companions</a></li>
+                <li><a href="#">Dawnguard</a></li>
+                <li><a href="#">Solstheim</a></li>
+            </ul>
+
+            <h2>Most Popular</h2>
+            <ul class="h-list">
+                <li><a href="#">>Eye of Magnus</a></li>
+                <li><a href="#">>Blade of Woe</a></li>
+                <li><a href="#">>Staff of Magnus</a></li>
+                <li><a href="#">>Wuuthrad</a></li>
+                <li><a href="#">>Zephyr</a></li>
+            </ul>
+        </aside>
+
+        <!-- ASIDE (RIGHT) -->
+        <aside class="aside-right">
+            <figure class="main-spotlight">
+                <img src="./img/stormcloak.jpg" height="300" width="150" alt="bandeira">
+            </figure>
+
+            <figure class="minor-spotlight">
+                <img src="./img/BlackHand.png" width="70" height="70" alt="blackhand">
+                <p>Dark Brotherhood destroyed in attack by Penitus Oculatus Agents</p>
+            </figure>
+
+            <figure class="minor-spotlight">
+                <img src="./img/nightingale.png" width="70" height="70" alt="night">
+                <p>Nightingales: Fact or Fiction?</p>
+            </figure>
+        </aside>
+
+        <!-- SECTION -->
+        <section>
+            <div class="sec-title">
+               <h2 class="sec-title">What's new?</h2>
+                <a href="#" class="sec-link">More news</a>  
+            </div>
+            <article class="box-2col3row">
+                <div class="box-content">
+                    <img src="img/ulfric.jpeg" width="200" height="150" alt="ulfric">
+
+                    <div class="news-text">
+                        <h4 class="news-text-title">Stormcloaks win the war</h4>
+                        <p class="date">4E 201 18th of Evening Star</p>
+                        <p>After a fearsome battle for Solitude The Stormcloaks win over The Empire and execute General Tullius. Allied with the Dragonborn, Ulfric Stormcloak declares that will not wear the mantle of High King untill recognized. "... it was you who fought for Skyrim..."</p>
+                    </div>
+                </div>
+
+                <div class="box-dates">
+                    <p class="date">4E 201 20th of Sun's Dusk</p>
+                    <a href="#">The Harbinger of The Companions, Kodlak Whitemane, dies</a>
+                    <p class="date">4E 201 15th of Frostfall</p>
+                    <a href="#">The College of Winterhold discovers the Eye of Magnus, which nearly destroys the city of Winterhold</a>
+                    <p class="date">4E 201 28th of Last Seed</p>
+                    <a href="#">Dragonborn emerges. Calling from The Greybeards heard all over Skyrim</a>
+                </div>
+            </article>
+
+            <article class="box">
+                <div class="box-title">
+                    <h2>Newsticker</h2>
+                </div>
+                <div class="news-text">
+                    <p>Stormcloaks faction now has domain over Whiterun, and the strategic positions of Fort Sungard, Fort Snowhawk and Fort Hraggstad.</p>
+                </div>
+            </article>
+
+            <article class="box">
+                <div class="box-title">
+                    <h2>Calendar</h2>
+                    <a href="#">Events ></a>
+                </div>
+
+                <div class="box-dates">
+                    <p class="date">4E 201 17th of Last Seed</p>
+                    <a href="#">Dragon was seen attacking Helgen, near Whiterun</a>
+                    <p class="date">4E 201 05th of Last Seed</p>
+                    <a href="#">Torygg, High King of Skyrim, is killed in a duel by Ulfric Stormcloak.</a>
+                    <p class="date">4E 176 22nd of First Hand</p>
+                    <a href="#">The Stormcloaks are founded and the Skyrim Civil War breaks out.</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <ul class="link-list">
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Report</a></li>
+                <li><a href="#">High King</a></li>
+                <li><a href="#">Dragons</a></li>
+            </ul>
+
+            <figure class="to-top">
+                <a href="#topo" class="go-start"><img src="img/seta-cima.png" width="15" height="15" alt="seta"></a>
+            </figure>
+
+            <p>Department of news of Skyrim</p>
+        </footer>
+    </body>
+</html>

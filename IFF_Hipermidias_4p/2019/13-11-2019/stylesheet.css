@@ -1,0 +1,38 @@
+body {
+	color: white;
+	background-color: #cecece;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzP9r_Y_PF3LmvLUIBveL2DD9hEfQKTYNqwAp-cE1cDrfD16Ax);
+	background-repeat: repeat;
+	background-attachment: :scroll;
+	background-position: left top;
+
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+	font-size: 30px;
+
+	text-indent: 20px;
+	text-align: left;
+
+	text-decoration: none;
+	letter-spacing: 4px;
+	text-transform:  capitalize;
+
+	margin-left: 30px;
+
+	border: 2px solid #FFD700;
+	border-radius: 10px;
+}
+
+a, a:visited {
+	text-decoration: underline;
+	color: white;
+	padding: 10px;
+}
+
+p::first-letter {
+	color: red;
+}
+
+a:hover {
+	font-size: 35px;
+}

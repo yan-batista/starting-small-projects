@@ -1,0 +1,408 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8E8E9;
+}
+
+#container {
+    color: rgba(255, 255, 255, 0.904);
+    font-family: 'VT323';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1260px;
+    max-height: 307px;
+}
+
+.pokeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 250;
+    margin: 5px;
+}
+
+.pokeContainer img {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.pokeContainer .pokeType, .pokeType2 {
+    width: 50px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 0px 15px;
+}
+
+/*--------------------COLORS--------------------*/
+/*--------------------GRASS--------------------*/
+#grass {
+    border-color: #4E8234;
+    background-color: #78C850;
+}
+
+#grass .pokeType  {
+    border-color: #4E8234;
+    background-color: #A7DB8D;
+}
+
+#grass .pokeType2 {
+    border-color: #4E8234;
+    background-color: #A7DB8D; 
+}
+
+#grass .pokeSprite {
+    border-color: #4E8234;
+    background-color: #A7DB8D;
+}
+/*--------------------FIRE--------------------*/
+#fire {
+    border-color: #9C531F;
+    background-color: #F08030;
+}
+
+#fire .pokeType {
+    border-color: #9C531F;
+    background-color: #F5AC78;
+}
+
+#fire .pokeType2 {
+    border-color: #9C531F;
+    background-color: #F5AC78;
+}
+
+#fire .pokeSprite {
+    border-color: #9C531F;
+    background-color: #F5AC78;
+}
+/*--------------------WATER--------------------*/
+#water {
+    border-color: #445E9C;
+    background-color: #6890F0;
+}
+
+#water .pokeType {
+    border-color: #445E9C;
+    background-color: #9DB7F5;
+}
+
+#water .pokeType2 {
+    border-color: #445E9C;
+    background-color: #9DB7F5;
+}
+
+#water .pokeSprite {
+    border-color: #445E9C;
+    background-color: #9DB7F5;
+}
+/*--------------------BUG--------------------*/
+#bug {
+    border-color: #6D7815;
+    background-color: #A8B820;
+}
+
+#bug .pokeType {
+    border-color: #6D7815;
+    background-color: #C6D16E;
+}
+
+#bug .pokeType2 {
+    border-color: #6D7815;
+    background-color: #C6D16E;
+}
+
+#bug .pokeSprite {
+    border-color: #6D7815;
+    background-color: #C6D16E;
+}
+/*--------------------NORMAL--------------------*/
+#normal {
+    border-color: #6D6D4E;
+    background-color: #A8A878;
+}
+
+#normal .pokeType {
+    border-color: #6D6D4E;
+    background-color: #C6C6A7;
+}
+
+#normal .pokeType2 {
+    border-color: #6D6D4E;
+    background-color: #C6C6A7;
+}
+
+#normal .pokeSprite {
+    border-color: #6D6D4E;
+    background-color: #C6C6A7;
+}
+/*--------------------POISON--------------------*/
+#poison {
+    border-color: #682A68;
+    background-color: #A040A0;
+}
+
+#poison .pokeType {
+    border-color: #682A68;
+    background-color: #C183C1;
+}
+
+#poison .pokeType2 {
+    border-color: #682A68;
+    background-color: #C183C1;
+}
+
+#poison .pokeSprite {
+    border-color: #682A68;
+    background-color: #C183C1;
+}
+/*--------------------ELECTRIC--------------------*/
+#electric {
+    border-color: #A1871F;
+    background-color: #F8D030;
+}
+
+#electric .pokeType {
+    border-color: #A1871F;
+    background-color: #FAE078;
+}
+
+#electric .pokeType2 {
+    border-color: #A1871F;
+    background-color: #FAE078;
+}
+
+#electric .pokeSprite {
+    border-color: #A1871F;
+    background-color: #FAE078;
+}
+/*--------------------GROUND--------------------*/
+#ground {
+    border-color: #927D44;
+    background-color: #E0C068;
+}
+
+#ground .pokeType {
+    border-color: #927D44;
+    background-color: #EBD69D;
+}
+
+#ground .pokeType2 {
+    border-color: #927D44;
+    background-color: #EBD69D;
+}
+
+#ground .pokeSprite {
+    border-color: #927D44;
+    background-color: #EBD69D;
+}
+/*--------------------FAIRY--------------------*/
+#fairy {
+    border-color: #9B6470;
+    background-color: #EE99AC;
+}
+
+#fairy .pokeType {
+    border-color: #9B6470;
+    background-color: #F4BDC9;
+}
+
+#fairy .pokeType2 {
+    border-color: #9B6470;
+    background-color: #F4BDC9;
+}
+
+#fairy .pokeSprite {
+    border-color: #9B6470;
+    background-color: #F4BDC9;
+}
+/*--------------------FIGHTING--------------------*/
+#fighting {
+    border-color: #7D1F1A;
+    background-color: #C03028;
+}
+
+#fighting .pokeType {
+    border-color: #7D1F1A;
+    background-color: #D67873;
+}
+
+#fighting .pokeType2 {
+    border-color: #7D1F1A;
+    background-color: #D67873;
+}
+
+#fighting .pokeSprite {
+    border-color: #7D1F1A;
+    background-color: #D67873;
+}
+/*--------------------PSYCHIC--------------------*/
+#psychic {
+    border-color: #A13959;
+    background-color: #F85888;
+}
+
+#psychic .pokeType {
+    border-color: #A13959;
+    background-color: #FA92B2;
+}
+
+#psychic .pokeType2 {
+    border-color: #A13959;
+    background-color: #FA92B2;
+}
+
+#psychic .pokeSprite {
+    border-color: #A13959;
+    background-color: #FA92B2;
+}
+/*--------------------ROCK--------------------*/
+#rock {
+    border-color: #786824;
+    background-color: #B8A038;
+}
+
+#rock .pokeType {
+    border-color: #786824;
+    background-color: #D1C17D;
+}
+
+#rock .pokeType2 {
+    border-color: #786824;
+    background-color: #D1C17D;
+}
+
+#rock .pokeSprite {
+    border-color: #786824;
+    background-color: #D1C17D;
+}
+/*--------------------STEEL--------------------*/
+#steel {
+    border-color: #787887;
+    background-color: #B8B8D0;
+}
+
+#steel .pokeType {
+    border-color: #787887;
+    background-color: #D1D1E0;
+}
+
+#steel .pokeType2 {
+    border-color: #787887;
+    background-color: #D1D1E0;
+}
+
+#steel .pokeSprite {
+    border-color: #787887;
+    background-color: #D1D1E0;
+}
+/*--------------------GHOST--------------------*/
+#ghost {
+    border-color: #493963;
+    background-color: #705898;
+}
+
+#ghost .pokeType {
+    border-color: #493963;
+    background-color: #A292BC;
+}
+
+#ghost .pokeType2 {
+    border-color: #493963;
+    background-color: #A292BC;
+}
+
+#ghost .pokeSprite {
+    border-color: #493963;
+    background-color: #A292BC;
+}
+/*--------------------ICE--------------------*/
+#ice {
+    border-color: #638D8D;
+    background-color: #98D8D8;
+}
+
+#ice .pokeType {
+    border-color: #638D8D;
+    background-color: #BCE6E6;
+}
+
+#ice .pokeType2 {
+    border-color: #638D8D;
+    background-color: #BCE6E6;
+}
+
+#ice .pokeSprite {
+    border-color: #638D8D;
+    background-color: #BCE6E6;
+}
+/*--------------------DRAGON--------------------*/
+#dragon {
+    border-color: #4924A1;
+    background-color: #7038F8;
+}
+
+#dragon .pokeType {
+    border-color: #4924A1;
+    background-color: #A27DFA;
+}
+
+#dragon .pokeType2 {
+    border-color: #4924A1;
+    background-color: #A27DFA;
+}
+
+#dragon .pokeSprite {
+    border-color: #4924A1;
+    background-color: #A27DFA;
+}
+/*--------------------FLYING--------------------*/
+#flying {
+    border-color: #6D5E9C;
+    background-color: #A890F0;
+}
+
+#flying .pokeType {
+    border-color: #6D5E9C;
+    background-color: #C6B7F5;
+}
+
+#flying .pokeType2 {
+    border-color: #6D5E9C;
+    background-color: #C6B7F5;
+}
+
+#flying .pokeSprite {
+    border-color: #6D5E9C;
+    background-color: #C6B7F5;
+}
+/*--------------------DARK--------------------*/
+#dark {
+    border-color: #49392F;
+    background-color: #705848;
+}
+
+#dark .pokeType {
+    border-color: #49392F;
+    background-color: #A29288;
+}
+
+#dark .pokeType2 {
+    border-color: #49392F;
+    background-color: #A29288;
+}
+
+#dark .pokeSprite {
+    border-color: #49392F;
+    background-color: #A29288;
+}

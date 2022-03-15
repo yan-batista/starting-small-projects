@@ -1,0 +1,256 @@
+body {
+    display: grid;
+    grid-template: 
+    "header nav nav"
+    "aside-l section aside-r" 
+    "aside-l section aside-r"
+    "footer footer footer" 
+    /0.5fr 1.5fr 0.5fr;
+}
+
+/*HEADER*/
+header {
+    grid-area: header;
+}
+
+/*NAV*/
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;  
+}
+
+nav ul li a, p {
+    margin: 5px;
+}
+
+.link-list li a {
+    border-right: 2px solid black;
+    padding: 5px 0px;
+    padding-right: 10px;
+}
+
+nav form {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+nav form .search-bar {
+    margin-left: 20px;
+}
+
+nav form .bt-shadow {
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+}
+
+.button-list {
+    margin-top: 50px;
+}
+
+.button-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+nav .button-list li a {
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    padding: 5px 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.white-darkbg {
+    color: white;
+    background-color: black;
+}
+
+/*ASIDE (LEFT SIDE)*/
+.aside-left {
+    grid-area: aside-l;
+}
+
+.aside-left figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: gray;
+    border: 2px solid black;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.aside-left ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.aside-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.aside-left .button-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.aside-left .button-list li a{
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding: 5px 2px;
+}
+
+.aside-left .h-list {
+    border: 2px solid black;
+    padding: 0px;
+    margin-right: 35px;
+    width: 100%;
+}
+
+.aside-left .h-list li {
+    margin: 5px;
+}
+
+.aside-left h2 {
+    margin-bottom: -10px;
+}
+
+/*ASIDE (RIGHT SIDE)*/
+.aside-right {
+    grid-area: aside-r;
+}
+
+.aside-right .main-spotlight {
+    display: flex;
+    justify-content: center;
+}
+
+.aside-right .minor-spotlight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: gray;
+    border: 2px solid black;
+}
+
+/*FOOTER*/
+footer {
+    grid-area: footer;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+}
+
+footer ul a {
+    margin: 5px;
+}
+
+footer .to-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*SECTION*/
+section {
+    grid-area: section;
+}
+
+section .sec-title {
+    grid-area: box-title;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    margin: 10px;
+    margin-bottom: -10px;
+    padding: 10px;
+}
+
+section article {
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+}
+
+section article .date {
+    font-style: italic;
+}
+
+section article .news-text-title {
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0px;
+}
+
+section .box-2col3row {
+    display: grid;
+    grid-template:
+    "box-title box-title"
+    "box-content box-content"
+    "box-dates box-dates"/
+    0.5fr 1.5fr;
+}
+
+.box-title {
+    grid-area: box-title;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.box-content {
+    grid-area: box-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-content .news-text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.box-dates {
+    grid-area: box-dates;
+    display: grid;
+    grid-template:
+    "p a"
+    "p a"
+    "p a"
+    /0.5fr 1.5fr;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
